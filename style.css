@@ -20,6 +20,9 @@ body {
   background-color: var(--white);
   color: var(--navy-blue);
 }
+button {
+  cursor: pointer;
+}
 .logo {
   width: 115px;
   height: 24px;
@@ -131,6 +134,11 @@ li p {
   text-align: center;
   color: var(--slate);
 }
+.portfolio li {
+  width: 360px;
+  height: 420px;
+  background: var(--white);
+}
 .portfolio h2 {
   font-family: var(--font-family);
   font-weight: 700;
@@ -139,10 +147,6 @@ li p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-}
-.portfolio li {
-  width: 360px;
-  height: 420px;
 }
 .portfolio h3 {
   font-family: var(--font-family);
