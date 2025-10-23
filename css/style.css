@@ -15,6 +15,13 @@
   --second-family: "Raleway", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+li a {
+  color: #2e2f42;
+}
 body {
   font-family: var(--font-family);
   background-color: var(--white);
@@ -26,21 +33,43 @@ button {
 .logo {
   width: 115px;
   height: 24px;
-  font-family: var(--second-family);
+  text-decoration: none;
+}
+.logo .web {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 117%;
+  line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--iris);
+  color: #4d5ae5;
 }
+.logo .studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+.logo .studiofooter {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
 nav li {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: var(--navy-blue);
+  color: #2e2f42;
 }
 address {
   font-family: var(--font-family);
@@ -48,10 +77,18 @@ address {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: var(--slate);
+  color: #434455;
+  text-decoration: none;
 }
 
 .hero {
+  width: 1440px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background: var(--navy-blue);
 }
 h1 {
@@ -60,11 +97,9 @@ h1 {
   font-size: 56px;
   line-height: 107%;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--white);
 }
 .hero button {
-  border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
@@ -74,6 +109,9 @@ h1 {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: var(--white);
+  border: none;
+  border-radius: 4px;
+  
 }
 .hero button:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -165,6 +203,8 @@ li p {
   color: var(--slate);
 }
 footer {
+  width: 1440px;
+  height: 312px;
   background: var(--navy-blue);
 }
 footer p {
@@ -175,3 +215,4 @@ footer p {
   letter-spacing: 0.02em;
   color: var(--cloud);
 }
+
